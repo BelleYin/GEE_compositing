@@ -18,14 +18,14 @@ This script performs cloud masking on satellite images taken by Landsat or senti
   -	Imagery scaling factors can be found on the Earth Engine Data Catalog.
 
 ### <ins> Masking </ins>	
-#### Landsat
+- Landsat
     - Cloud masking based on the different QA bands. 
         -	Bit 1: Designated cloud
         -	Bit 2: Cirrus
         -	Bit 3: Cloud
         -	Bit 4: Cloud shadow
     - Filter out pixels flagged as cloudy, shadowed etc. and only keep clean pixels indicating no cloud.   
-#### Sentinel 2
+- Sentinel 2
     - This band is a bitmask band specifically for cloud and cirrus detection.
         -	Bit 10: Clouds
         -	Bit 11: Cirrus
